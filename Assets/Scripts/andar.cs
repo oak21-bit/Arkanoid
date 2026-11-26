@@ -10,11 +10,11 @@ public class andar : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            direcao = -1f;
+            direcao = -2f;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            direcao = 1f;
+            direcao = 2f;
         }
 
         transform.Translate(Vector3.right * direcao * velocidade * Time.deltaTime);
